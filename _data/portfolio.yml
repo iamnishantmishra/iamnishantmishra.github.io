@@ -1,0 +1,17 @@
+- name: Frontend Development/Design
+  image: pic02.jpeg
+  image_link:
+  description: I've relevant experience in creating static websites. I've always felt that there's something really special about being involved in a part of the project that the end user is able to touch and experience.
+  button_link:
+
+- name: Writing
+  image: pic03.jpeg
+  image_link:
+  description: I have a habit of writing things down while learning. I am currently organizing my notes so that I can share them in the form of blogs.
+  button_link:
+
+- name: Drupal 8 Development
+  image: pic04.jpg
+  image_link:
+  description: Working with Drupal 8 theming, site building and module development.
+  button_link:

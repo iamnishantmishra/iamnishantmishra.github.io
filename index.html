@@ -1,0 +1,70 @@
+---
+layout: default
+title: Home
+---
+
+<!-- Main -->
+<section id="main">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+
+				<!-- Portfolio -->
+				<section>
+					<header class="major">
+						<h2>My Skills</h2>
+					</header>
+					<div class="row">
+						{% for item in site.data.portfolio %}
+						<div class="col-4 col-6-medium col-12-small">
+							<section class="box">
+								<a href="{{ item.image_link }}" class="image featured"><img src="/assets/images/{{ item.image }}" alt="" /></a>
+								<header>
+									<h3>{{ item.name }}</h3>
+								</header>
+								<p>{{ item.description }}</p>
+								<footer>
+									<ul class="actions">
+										<li><a href="{{ item.button_link }}" class="button alt">Find out more</a></li>
+									</ul>
+								</footer>
+							</section>
+						</div>
+						{% endfor %}
+					</div>
+				</section>
+
+			</div>
+			<div class="col-12">
+
+				<!-- Blog -->
+				<section>
+					<header class="major">
+						<h2>Featured Blogs</h2>
+					</header>
+					<div class="row">
+						{% for item in site.data.f_blogs %}
+						<div class="col-6 col-12-small">
+							<section class="box">
+								<a href="{{ item.image_link }}" class="image featured"><img src="/assets/images/{{ item.image }}" alt="" /></a>
+								<header>
+									<h3>{{ item.name }}</h3>
+									<p>{{ item.post_status }}</p>
+								</header>
+								<p>{{ item.description }}</p>
+								<footer>
+									<ul class="actions">
+										<li><a href="{{ item.button1_link }}" target="_blank" class="button icon fa-file-text">{{ item.button1_text }}</a></li>
+										<li><a href="{{ item.button2_link }}" class="button alt icon fa-eye">{{ item.button2_text }}</a></li>
+									</ul>
+								</footer>
+							</section>
+						</div>
+						{% endfor %}
+					</div>
+				</section>
+
+			</div>
+		</div>
+	</div>
+</section>

@@ -1,0 +1,73 @@
+<!-- Header -->
+<section id="header">
+
+	<!-- Logo -->
+	<h1><a href="{{ site.baseurl }}{% link index.html %}">{{ site.title }}</a></h1>
+
+	<!-- Nav -->
+	<nav id="nav">
+		<ul>
+			<li class="current"><a href="{{ site.baseurl }}{% link index.html %}">Home</a></li>
+			<li>
+				<a href="#">Articles</a>
+				<ul>
+					{% for post in site.posts %}
+					<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+					{% endfor %}
+				</ul>
+			</li>
+			<li><a href="#">Portfolio</a></li>
+			<li><a href="#">Connect With Me</a></li>
+		</ul>
+	</nav>
+
+	{% if page.url == "/" %}
+	<!-- Banner -->
+	<section id="banner">
+		<header>
+			<h2>Hello World! It's Nishant</h2>
+			<p>A budding software developer from India</p>
+		</header>
+	</section>
+
+	<!-- Intro -->
+	<section id="intro" class="container">
+		<div class="row">
+			<div class="col-4 col-12-medium">
+				<section class="first">
+					<i class="icon featured fa-cog"></i>
+					<header>
+						<h2>B.Tech CSE</h2>
+					</header>
+					<p>Computer Science & Engineering graduate (batch 2014-18)</p>
+				</section>
+			</div>
+			<div class="col-4 col-12-medium">
+				<section class="middle">
+					<i class="icon featured alt fa-flash"></i>
+					<header>
+						<h2>Web Developer/Designer</h2>
+					</header>
+					<p>Drupal Frontend Developer at OpenSense Labs, New Delhi</p>
+				</section>
+			</div>
+			<div class="col-4 col-12-medium">
+				<section class="last">
+					<i class="icon featured alt2 fa-star"></i>
+					<header>
+						<h2>Blogger & OpenSource Enthusiast</h2>
+					</header>
+					<p>Author at freeCodeCamp's Medium publication; moderator at freeCodeCamp.org and GatsbyJS</p>
+				</section>
+			</div>
+		</div>
+		<footer>
+			<ul class="actions">
+				<li><a href="#" class="button large">Connect With Me</a></li>
+				<li><a href="#" class="button alt large">Learn More</a></li>
+			</ul>
+		</footer>
+	</section>
+	{% endif %}
+
+</section>

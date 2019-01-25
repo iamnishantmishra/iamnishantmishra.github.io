@@ -1,0 +1,101 @@
+<!-- Footer -->
+<section id="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-8 col-12-medium">
+				<section>
+					<header>
+						<h2>Recent Blog Posts</h2>
+					</header>
+					<ul class="dates">
+						{% for post in site.posts limit:5 %}
+							<li>
+								<span class="date">{{ post.date | date: "%b"}}<strong>{{ post.date | date: "%d" }}</strong></span>
+								<h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+								<p>{{ post.excerpt }}</p>
+							</li>
+						{% endfor %}
+					</ul>
+				</section>
+			</div>
+			<div class="col-4 col-12-medium">
+				<section>
+					<header>
+						<h2>Who Am I?</h2>
+					</header>
+					<a href="#" class="image featured"><img src="/assets/images/pic10.jpeg" alt="" /></a>
+					<p>
+						{{ site.description }}
+					</p>
+					<footer>
+						<ul class="actions">
+							<li><a href="#" class="button">Find out more</a></li>
+						</ul>
+					</footer>
+				</section>
+			</div>
+			<div class="col-4 col-6-medium col-12-small">
+				<section>
+					<header>
+						<h2>My Favourite Articles</h2>
+					</header>
+					<ul class="divided">
+						{% for article in site.data.f_articles %}
+							<li><a href="{{ article.link }}" target="_blank">{{ article.name }}</a></li>
+						{% endfor %}
+					</ul>
+				</section>
+			</div>
+			<div class="col-4 col-6-medium col-12-small">
+				<section>
+					<header>
+						<h2>Some More Links</h2>
+					</header>
+					<ul class="divided">
+						{% for article in site.data.m_articles %}
+							<li><a href="{{ article.link }}" target="_blank">{{ article.name }}</a></li>
+						{% endfor %}
+					</ul>
+				</section>
+			</div>
+			<div class="col-4 col-12-medium">
+				<section>
+					<header>
+						<h2>Connect With Me</h2>
+					</header>
+					<ul class="social">
+						<li><a class="icon fa-facebook" href="{{ site.facebook }}"><span class="label">Facebook</span></a></li>
+						<li><a class="icon fa-twitter" href="{{ site.twitter }}"><span class="label">Twitter</span></a></li>
+						<li><a class="icon fa-instagram" href="{{ site.instagram }}"><span class="label">Instagram</span></a></li>
+						<li><a class="icon fa-github" href="{{ site.github }}"><span class="label">GitHub</span></a></li>
+						<li><a class="icon fa-linkedin" href="{{ site.linkedin }}"><span class="label">LinkedIn</span></a></li>
+					</ul>
+					<ul class="contact">
+						<li>
+							<h3>Address</h3>
+							<p>{{ site.address }}</p>
+						</li>
+						<li>
+							<h3>Mail</h3>
+							<p>{{ site.email }}</p>
+						</li>
+						<li>
+							<h3>Phone</h3>
+							<p>{{ site.phone }}</p>
+						</li>
+					</ul>
+				</section>
+			</div>
+			<div class="col-12">
+
+				<!-- Copyright -->
+				<div id="copyright">
+					<ul class="links">
+						<li>&copy; Nishant Mishra. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</section>

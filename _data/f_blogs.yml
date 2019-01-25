@@ -1,0 +1,19 @@
+- name: An Introduction to Object-Oriented Programming with Ruby
+  image: pic08.jpeg
+  image_link:
+  description: basics of Ruby and OOP principles.
+  post_status: Posted a while ago
+  button1_text: Read full article
+  button1_link: https://medium.freecodecamp.org/an-introduction-to-object-oriented-programming-with-ruby-73531e2b8ddc
+  button2_text: 5k+ views
+  button2_link:
+
+- name: Article 2
+  image: pic09.jpg
+  image_link:
+  description: description of article 2
+  post_status: Never posted
+  button1_text: Coming Soon
+  button1_link:
+  button2_text: No views
+  button2_link:
